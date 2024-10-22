@@ -34,6 +34,36 @@ h1 {
     line-height: 1;
 }
 
+    /* Gaya Umum */
+    #kontak h1 {
+        font-size: 1.5rem; /* Ukuran font default */
+    }
+
+    #kontak p {
+        font-size: 1.25rem; /* Ukuran font default untuk paragraf */
+    }
+
+    /* Gaya Responsif untuk Perangkat Kecil */
+    @media (max-width: 768px) {
+        #kontak h1 {
+            font-size: 1.5rem; /* Ukuran font lebih kecil di perangkat kecil */
+        }
+        #kontak p {
+            font-size: 1rem; /* Ukuran font lebih kecil di perangkat kecil */
+        }
+        .img-fluid {
+            max-width: 100%; /* Pastikan gambar tidak melampaui lebar kontainer */
+            height: auto; /* Mengatur tinggi otomatis untuk menjaga rasio aspek */
+        }
+    }
+
+    /* Gaya Tambahan */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
 
 .name {
     font-size: 2.5rem;
@@ -427,7 +457,7 @@ h1 {
 
     <section id="kontak" style="background-color: #BBE1FA;">
     <div class="container py-md-5">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-7 pt-5 text-md-start text-center">
                     <h1><b>Tertarik dengan Saya?</b></h1>
                     <p>Hubungi saya di bawah ini</p>
@@ -442,7 +472,7 @@ h1 {
                         </a>
                     </div>
                 </div>
-                <div class="col-md-5 text-start">
+                <div class="col-md-5 text-start text-center ">
                     <img src="contact me.png" alt="Ilustrasi" class="img-fluid">
                 </div>
             </div>
